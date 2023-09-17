@@ -1,10 +1,48 @@
 {
-    "tiempoSimulacion" : 20000,
+    "tiempoSimulacion" : 40000, 
     "restroomUse" : 0.10,
     "storeUse" : 0.20,
     "dispenserUse" : 0.30,
+    "souvenirShopUse" : 0.65,
     "incorrectTicketProbability" : 0.05,
-    "itemConfiscation" : 0.50,
-    "working" : 0.10000
+    "itemConfiscationProbability" : 0.50,
+    "illegalItemProbability" : 0.10,
+
+    "maleRestroomCapacity" : 50,
+    "femaleRestroomCapacity" : 40,
+
+    "entranceQueue" : {
+        "minTime" : 2,
+        "maxTime" : 15
+    },
+
+    "areaCapacity" : 300,
+
+    "souvenirStore" : {
+        "shirts" : 200,
+        "posters" : 500,
+        "photocards" : 350,
+        "mugs" : 125,
+        "caps" : 70,
+        "albums" : 425
+    },
+
+    "foodMenu" : {
+        "beverages" : ["water", "pilsen", "imperial", "bohemia", "coke"],
+        "food" : ["burgers", "tacos", "nachos", "fries"]
+    },
+
+    "dispenser" : {
+        "dispenserBeverageCap" : 100,
+        "dispenserSnackCap" : 50,
+        "beverages" : ["water", "coke", "tropical"],
+        "snacks" : ["cookies", "powerbar", "chocolatebar"]
+    },
+
+    "exitQueue" : {
+        "minTime" : 5,
+        "maxTime" : 15
+    }
+
 }
 
