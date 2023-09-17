@@ -4,5 +4,5 @@
     "storeUse" : 0.20,
     "dispenserUse" : 0.30,
     "incorrectTicketProbability" : 0.05,
-    "itemConfiscation" : 0.10
+    "itemConfiscation" : 0.50
 }
