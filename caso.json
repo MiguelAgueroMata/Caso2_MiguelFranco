@@ -1,0 +1,6 @@
+{
+    "tiempoSimulacion" : 20000,
+    "restroomUse" : 0.10,
+    "storeUse" : 0.20,
+    "dispenserUse" : 0.30
+}
