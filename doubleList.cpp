@@ -1,4 +1,7 @@
-#include "linkedList.h"
+#include "doubleList.h"
+
+//Esto es codigo de el otro caso entonces hay cosas que no se van a usar 
+//Solo que no se exactamente que entonces no he depurado bien el file
 
 linkedList::linkedList()
 {

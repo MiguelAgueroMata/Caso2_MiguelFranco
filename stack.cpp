@@ -27,17 +27,17 @@ int Stack::length()
     return cont;
 }
 
-void Stack::push(string nTitle)// Insertar al final
+void Stack::push(string prodName)// Insertar al final
 {
     if(isEmpty())
     {
-        primero = new nodeStack(nTitle);
+        primero = new nodeStack(prodName);
         tope = primero;
         primero->anterior = NULL;
     }
     else
     {
-        nodeS aux = new nodeStack(nTitle);
+        nodeS aux = new nodeStack(prodName);
         tope->siguiente = aux;
         aux->anterior = tope;
         tope = aux;

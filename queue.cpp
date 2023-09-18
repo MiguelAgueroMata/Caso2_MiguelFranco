@@ -28,7 +28,6 @@ int Queue::length()
 }
 
 
-///////////////////////////////////////////////////////////////////  COLA  ///////////////////////////////////////////////////////////////////////////
 string Queue::front()//Retorna el frente de la cola, en otras palabras el primer valor de la lista
 {
     if (isEmpty()) {
@@ -38,17 +37,17 @@ string Queue::front()//Retorna el frente de la cola, en otras palabras el primer
     }
 }
 
-void Queue::queue(string nTitle)// Insertar al final
+void Queue::queue(string attendantName)// Insertar al final
 {
     if(isEmpty())
     {
-        primero = new nodeQueue(nTitle);
+        primero = new nodeQueue(attendantName);
         tope = primero;
         primero->anterior = NULL;
     }
     else
     {
-        nodeQ aux = new nodeQueue(nTitle);
+        nodeQ aux = new nodeQueue(attendantName);
         tope->siguiente = aux;
         aux->anterior = tope;
         tope = aux;

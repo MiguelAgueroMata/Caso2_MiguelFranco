@@ -14,7 +14,7 @@ class Queue
         bool isEmpty() { return primero == NULL; }
         int length();
 
-        void queue(string newsTitle);
+        void queue(string attendantName);
         void dequeue();
         string front();
         

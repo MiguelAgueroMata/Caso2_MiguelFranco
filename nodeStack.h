@@ -7,9 +7,9 @@ using namespace std;
 class nodeStack
 {
 	public:
-		nodeStack(string nTitle)
+		nodeStack(string prodName)// Se podria manejar con un codigo tambien
 		{
-		newsTitle = nTitle;
+		newsTitle = prodName;
 		siguiente = NULL;
 		anterior = NULL;
 		}

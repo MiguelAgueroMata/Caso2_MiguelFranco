@@ -14,7 +14,7 @@ class Stack
         bool isEmpty() { return primero == NULL; }
         int length();
 
-        void push(string newsTitle);
+        void push(string prodName);
         void pop();
         string top();
 
