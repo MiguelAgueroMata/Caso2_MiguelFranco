@@ -1,5 +1,9 @@
 #include "queue.h"
 
+
+//Aca estan las funciones basicas y principales de las colas
+//Acorde a necesidad se agregaran cosas extra
+
 Queue::Queue()
 {
     primero = tope = NULL;

@@ -18,8 +18,6 @@ class Stack
         void pop();
         string top();
 
-        void print();
-	
 	private:
 		nodeS primero;
 		nodeS tope;

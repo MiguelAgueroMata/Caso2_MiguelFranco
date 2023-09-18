@@ -18,9 +18,6 @@ class Queue
         void dequeue();
         string front();
         
-
-        void print();
-	
 	private:
 		nodeQ primero;
 		nodeQ tope;

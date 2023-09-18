@@ -1,5 +1,11 @@
 #include "stack.h"
 
+//Aca estan las funciones basicas y principales de las pilas
+//No hay mucho que explicar diria yo push, pop ,top
+//Se podrian agregar mas cosas dependiendo de necesidad ya veremos
+//De fijo se termina agregando mas
+
+
 Stack::Stack()
 {
     primero = tope = NULL;
