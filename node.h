@@ -7,9 +7,9 @@ using namespace std;
 class node 
 {
 	public:
-		node(string nTitle)
+		node(string aName)
 		{
-		newsTitle = nTitle;
+		attendantName = aName;
 		siguiente = NULL;
 		anterior = NULL;
 		}
@@ -18,7 +18,7 @@ class node
 	private:
 		node* siguiente;
 		node* anterior;
-        string newsTitle;
+        string attendantName;
 
 		friend class linkedList;
 };
