@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "doubleList.h"
+#include "linkedList.h"
 
 class SouvenirShop
 {
