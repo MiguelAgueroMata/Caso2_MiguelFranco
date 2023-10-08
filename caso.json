@@ -4,9 +4,9 @@
     "storeUse" : 0.20,
     "dispenserUse" : 0.30,
     "souvenirShopUse" : 0.65,
-    "incorrectTicketProbability" : 0.10,
-    "itemConfiscationProbability" : 0.50,
-    "illegalItemProbability" : 0.40,
+    "incorrectTicket" : 0.10,
+    "itemConfiscation" : 0.50,
+    "illegalItem" : 0.40,
 
     "maleRestroomCapacity" : 50,
     "femaleRestroomCapacity" : 40,

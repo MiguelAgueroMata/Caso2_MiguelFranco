@@ -29,9 +29,9 @@ void runSimulation(/*Aun debo definir bien que usar de parametros para la config
 
 int main()
 {
-    void runSimulation(int lengthOfSimulation, int areaOfSimulation) // aca se podrian agregar las probabilidades de ir de compras
+    void runSimulation(int lengthOfSimulation, int areaOfSimulation); // aca se podrian agregar las probabilidades de ir de compras
                                                                      //de decomiso, ticket equivocado y esas cosas
                                                                      //o eso se hace en el json? no se como funciona el json la verdad
                                                                      //hay que preguntarle a el profe       
-    return 0
+    return 0;
 }
