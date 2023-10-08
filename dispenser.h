@@ -7,13 +7,24 @@ using namespace std;
 class Dispenser
 {
     private:
-        Stack snacks;
+
         Stack coke;
         Stack water;
-        Stack powerBars;
-        Stack chocolate;
+        Stack powerBar;
+        Stack cookies;
+
     public:
         //Thread para deshabilitar dispenser y hacer restock cuando una de las pilas del dispenser llegue a 0
-        void restockPush();
+        void restockPush(Stack pilaChequeo)
+        {
+            if (pilaChequeo.isEmpty() || pilaChequeo.length() < 25)
+            {
+                while( pilaChequeo.length() < 25)
+                {
+                    pilaChequeo.push(pilaChequeo.top());
+                }
+            }
+        }
+
         
 };

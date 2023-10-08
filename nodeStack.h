@@ -9,7 +9,7 @@ class nodeStack
 	public:
 		nodeStack(string prodName)// Se podria manejar con un codigo tambien
 		{
-		newsTitle = prodName;
+		productName = prodName;
 		siguiente = NULL;
 		anterior = NULL;
 		}
@@ -18,7 +18,7 @@ class nodeStack
 	private:
 		nodeStack* siguiente;
 		nodeStack* anterior;
-        string newsTitle;
+        string productName;
 
 		friend class Stack;
 };

@@ -70,6 +70,6 @@ string Stack::top()//Retorna el tope de la pila, en otras palabras el ultimo val
     if (isEmpty()) {
         return "Lista vacía";
     } else {
-        return tope->newsTitle;
+        return tope->productName;
     }
 }

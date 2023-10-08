@@ -21,6 +21,7 @@ class Stack
 	private:
 		nodeS primero;
 		nodeS tope;
+        string product;
 };
 
 #endif

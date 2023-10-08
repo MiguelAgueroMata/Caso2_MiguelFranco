@@ -18,4 +18,6 @@ class FoodShop
         //Thread donde se corre la probabilidad para seleccionar que va a comprar la persona y cantidad.
         void buyProbability();
 
+        void restockFoodShop();
+
 };

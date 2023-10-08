@@ -4,9 +4,9 @@
     "storeUse" : 0.20,
     "dispenserUse" : 0.30,
     "souvenirShopUse" : 0.65,
-    "incorrectTicketProbability" : 0.05,
+    "incorrectTicketProbability" : 0.10,
     "itemConfiscationProbability" : 0.50,
-    "illegalItemProbability" : 0.10,
+    "illegalItemProbability" : 0.40,
 
     "maleRestroomCapacity" : 50,
     "femaleRestroomCapacity" : 40,
@@ -21,9 +21,7 @@
     "souvenirStore" : {
         "shirts" : 200,
         "posters" : 500,
-        "photocards" : 350,
-        "mugs" : 125,
-        "caps" : 70,
+        "photocards" : 600,
         "albums" : 425
     },
 
@@ -35,8 +33,8 @@
     "dispenser" : {
         "dispenserBeverageCap" : 100,
         "dispenserSnackCap" : 50,
-        "beverages" : ["water", "coke", "tropical"],
-        "snacks" : ["cookies", "powerbar", "chocolatebar"]
+        "beverages" : ["water", "coke"],
+        "snacks" : ["cookies", "powerbar"]
     },
 
     "exitQueue" : {

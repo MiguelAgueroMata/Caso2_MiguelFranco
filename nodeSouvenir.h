@@ -1,13 +1,13 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef NODESOUVENIR_H
+#define NODESOUVENIR_H
 #include <string>
 
 using namespace std;
 
-class nodeQueue
+class nodeSouvenirQueue
 {
 	public:
-		nodeQueue(string aName) // Tal vez seria mejor manejarlo mediante codigos en lugar de nombres
+		nodeSouvenirQueue(string aName) // Tal vez seria mejor manejarlo mediante codigos en lugar de nombres
 		{                               //que el codigo sea el numero de ticket o algo asi puede que lo cambie luego
 		attendantName = aName;
 		siguiente = NULL;
@@ -16,12 +16,12 @@ class nodeQueue
 
 
 	private:
-		nodeQueue* siguiente;
-		nodeQueue* anterior;
+		nodeSouvenirQueue* siguiente;
+		nodeSouvenirQueue* anterior;
         string attendantName;
 
 
 		friend class Queue;
 };
-typedef nodeQueue* nodeQ;
+typedef nodeSouvenirQueue* nodeSouvenirQ;
 #endif

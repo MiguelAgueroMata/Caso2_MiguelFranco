@@ -37,7 +37,7 @@ string Queue::front()//Retorna el frente de la cola, en otras palabras el primer
     if (isEmpty()) {
         return "Lista vacía";
     } else {
-        return primero->newsTitle;
+        return primero->attendantName;
     }
 }
 
