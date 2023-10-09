@@ -21,17 +21,6 @@ class SouvenirShop
         
 
     public:
-        //Thread para sacar a las personas la tienda de souvenirs y mandarlas de vuelta a la zona de donde venian.
-        node exitSouvenirShop()
-        {
-            /*cambie de idea de como sacarlos luego volvemos*/
-            random_device rd;
-            mt19937 gen(rd());
-            uniform_int_distribution<int> distribution(1, 3);
-            int random_number = distribution(gen);
-
-            souvenirShop.deleteLast();
-        }
         //Thread donde se corre la probabilidad de que la persona compre algo y otra para escoger que va a comprar.
         void buyProbability()
         {
