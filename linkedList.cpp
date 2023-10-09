@@ -1,4 +1,4 @@
-#include "doubleList.h"
+#include "linkedList.h"
 
 //Esto es codigo de el otro caso entonces hay cosas que no se van a usar 
 //Solo que no se exactamente que entonces no he depurado bien el file
@@ -103,7 +103,7 @@ void linkedList::print()
     int cont = 1;
     while(aux != NULL)
     {
-        cout << cont << " .Titulo: " << aux->newsTitle << endl;
+        cout << cont << " .Titulo: " << aux->attendantName << endl;
         aux = aux->siguiente;
         cont++;
     }

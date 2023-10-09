@@ -2,58 +2,72 @@
 #include <fstream>
 #include <json/json.h>
 
+using namespace std;
+using namespace Json;
+
 class Config {
-public:
-    int tiempoSimulacion;
-    double restroomUse;
-    double storeUse;
-    double dispenserUse;
-    double souvenirShopUse;
-    double incorrectTicket;
-    double itemConfiscation;
-    double illegalItem;
-    int maleRestroomCapacity;
-    int femaleRestroomCapacity;
-    struct EntranceQueue {
-        int minTime;
-        int maxTime;
-    } entranceQueue;
-    int areaCapacity;
-    struct SouvenirStore {
-        int shirts;
-        int posters;
-        int photocards;
-        int albums;
-    } souvenirStore;
-    struct FoodMenu {
-        std::vector<std::string> beverages;
-        std::vector<std::string> food;
-    } foodMenu;
-    struct Dispenser {
-        int dispenserBeverageCap;
-        int dispenserSnackCap;
-        std::vector<std::string> beverages;
-        std::vector<std::string> snacks;
-    } dispenser;
-    struct ExitQueue {
-        int minTime;
-        int maxTime;
-    } exitQueue;
+    public:
+        int tiempoSimulacion;
+        double restroomUse;
+        double storeUse;
+        double dispenserUse;
+        double souvenirShopUse;
+        double incorrectTicket;
+        double itemConfiscation;
+        double illegalItem;
+        int maleRestroomCapacity;
+        int femaleRestroomCapacity;
+
+        struct EntranceQueue 
+        {
+            int minTime;
+            int maxTime;
+        } entranceQueue;
+
+        int areaCapacity;
+        struct SouvenirStore 
+        {
+            int shirts;
+            int posters;
+            int photocards;
+            int albums;
+        } souvenirStore;
+
+        struct FoodMenu 
+        {
+            vector<string> beverages;
+            vector<string> food;
+        } foodMenu;
+
+        struct Dispenser 
+        {
+            int dispenserBeverageCap;
+            int dispenserSnackCap;
+            vector<string> beverages;
+            vector<string> snacks;
+        } 
+        dispenser;
+
+        struct ExitQueue 
+        {
+            int minTime;
+            int maxTime;
+        } exitQueue;
 };
 
 int main() {
-    std::ifstream configFile("config.json");
+    ifstream configFile("config.json");
     if (!configFile.is_open()) {
-        std::cerr << "No se pudo abrir el archivo config.json" << std::endl;
+        cerr << "No se pudo abrir el archivo config.json" << endl;
         return 1;
     }
 
-    Json::CharReaderBuilder reader;
-    Json::Value root;
-    std::string errs;
+    CharReaderBuilder reader;
+    Value root;
+    string errs;
 
-    if (!Json::parseFromStream(reader, configFile, &root, &errs)) {
-        std::cerr << "Error al analizar el JSON: " << errs << std::endl;
+    if (!parseFromStream(reader, configFile, &root, &errs)) {
+        cerr << "Error al analizar el JSON: " << errs << endl;
         return 1;
     }
 
@@ -95,8 +109,8 @@ int main() {
     configFile.close();
 
     // Ahora puedes usar la configuración almacenada en la clase Config
-    std::cout << "Tiempo de simulación: " << config.tiempoSimulacion << std::endl;
-    std::cout << "Uso de baños: " << config.restroomUse << std::endl;
+    cout << "Tiempo de simulación: " << config.tiempoSimulacion << endl;
+    cout << "Uso de baños: " << config.restroomUse << endl;
     // ...
 
     return 0;

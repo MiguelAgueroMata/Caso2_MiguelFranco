@@ -19,4 +19,14 @@ class PublicArea
         }
 
 
+        //Cuando termina concierto solo se saca a todos.
+        void concertEnd()
+        {
+            while(!zone.isEmpty())
+            {
+                zone.deleteLast();
+            }
+        }
+
+
 };
