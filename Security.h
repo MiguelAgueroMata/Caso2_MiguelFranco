@@ -16,16 +16,15 @@ class SecurityCheck
 
     public:
 
-        bool checkingAttendant(Queue checkQueue)
+        bool checkingAttendant(Queue checkQueue, int incorrectTicket)
         {
             random_device rd;
             mt19937 gen(rd());
             uniform_int_distribution<int> distribution(1, 100);
             int random_number = distribution(gen);
 
-            if (random_number > incorrectTicket/*hay que agarrarlo del json*/)
+            if (random_number <= incorrectTicket)
             {
-                checkQueue.dequeue();
                 return false;
             }
             else

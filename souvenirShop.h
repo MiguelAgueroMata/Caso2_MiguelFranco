@@ -22,13 +22,19 @@ class SouvenirShop
 
     public:
         //Thread donde se corre la probabilidad de que la persona compre algo y otra para escoger que va a comprar.
-        void buyProbability()
+        int buyProbability()
         {
             random_device rd;
             mt19937 gen(rd());
             uniform_int_distribution<int> distribution(1, 4);
+
             int random_number = distribution(gen);
+
+            return random_number;
+
         }
+
+
 
         void restockSouvenirShop(Stack pilaChequeo)
         {
@@ -38,6 +44,32 @@ class SouvenirShop
                 {
                     pilaChequeo.push(pilaChequeo.top());
                 }
+            }
+        }
+
+        void buyMerchandise(int random_number)
+        {
+            if (random_number == 1)
+            {
+                PhotoCards.pop();
+            }
+            else if (random_number == 2)
+            {
+                PhotoCards.pop();
+                Albums.pop();
+            }
+            else if (random_number == 3)
+            {
+                PhotoCards.pop();
+                Albums.pop();
+                Shirts.pop();
+            }
+            else
+            {
+                PhotoCards.pop();
+                Albums.pop();
+                Shirts.pop();
+                Posters.pop();
             }
         }
 
